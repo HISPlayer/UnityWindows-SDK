@@ -18,7 +18,7 @@ Open **Player Settings > Other Settings**. Disable the **Auto Graphics API for W
 ### <ins>UWP Settings</ins>
 Open **Universal Windows Platform Settings > Player Settings > Publishing Settings > Capabilities**. Check the **InternetClient** option to enable internet access.
 
-## Set up HISPlayer Manager
+## Setup HISPlayer Manager
 Create a script which is going to inherit from **HISPlayerManager**. It is needed to include the namespace by adding **‘using HISPlayerAPI;’** and add this component to a GameObject. It is recommended to create an **Empty GameObject** for this.
 
 Call the **‘SetUpPlayer()’** function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
