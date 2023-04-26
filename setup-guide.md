@@ -6,6 +6,10 @@ Importing the package is the same as importing other normal packages in Unity. S
 
 **Assets > Import Package > Custom Package**
 
+<p align="center">
+<img src="./assets/import-package.png">
+</p>
+
 ## Configure Unity for Windows
 Switch the platform for **Windows**. Open **File > Build Settings** and then select **Windows, Mac, Linux platform** for Windows Standalone build or select **Universal Windows Platform** for UWP build and **switch platform**.
 
