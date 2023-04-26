@@ -51,3 +51,63 @@ The following public APIs are provided by HISPlayerManager.
   
 ## Functions
 The following functions are provided by **HISPlayerManager**. They are **not public** so it’s necessary to create a custom script which inherits from **HISPlayerManager**.
+
+### Virtual functions
+These functions can be overridden.
+#### protected virtual void Awake()
+MonoBehaviour function which will be called from the beginning of the scene. It can be overridden but to make the system work it’s necessary to call base.Awake() into the overridden function.
+
+#### protected virtual void EventPlaybackReady(HISPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HISPlayerEvent.HISPlayer_EVENT_PLAYBACK_READY** is triggered.
+This event occurs when the current playback of a stream is ready to be used.
+Calling functions such as GetTracks before this event is triggered will provide null information.
+ 
+#### protected virtual void EventVideoSizeChange(HisPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_VIDEO_SIZE_CHANGE** is triggered.
+This event occurs whenever the internal video size of the current track changes.
+This event is triggered by the ABR feature.
+| Name  | Description  | 
+|---|---|
+|param1| Width of the video.|
+|param2| Heigth of the video.|
+ 
+#### protected virtual void EventPlaybackPlay(HisPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_PLAY** is triggered.
+This event occurs whenever an internal playback has been started.
+ 
+#### protected virtual void EventPlaybackPause(HisPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_PAUSE** is triggered.
+This event occurs whenever an internal playback has been paused.
+
+#### protected virtual void EventPlaybackStop(HisPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_STOP** is triggered.
+This event occurs whenever an internal playback has been stopped.
+
+#### protected virtual void EventPlaybackSeek(HisPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_SEEK** is triggered.
+This event occurs whenever an internal playback has been sought to a new time position.
+| Name  | Description  | 
+|---|---|
+|param1| Value of the new track position in milliseconds.|
+ 
+#### protected virtual void EventVolumeChange(HisPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_VOLUME_CHANGE** is triggered.
+This event occurs whenever the volume has been modified.
+| Name  | Description  | 
+|---|---|
+|param1| New value for the volume.|
+ 
+#### protected virtual void EventEndOfContent(HISPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_END_OF_CONTENT** is triggered.
+This event occurs whenever the player reaches the end of the playback.
+ 
+#### protected virtual void EventOnStreamRelease(HISPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_ON_STREAM_RELEASE** is triggered.
+This event occurs whenever a player/stream has been released
+ 
+#### protected virtual void EventTextRender(HISPlayerCaptionElement subtitlesInfo)
+Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_TEXT_RENDER** is triggered.
+This event occurs whenever a caption's text has been generated.
+| Name  | Description  | 
+|---|---|
+|caption| The next generated caption text.|
