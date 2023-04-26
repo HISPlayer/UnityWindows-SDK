@@ -111,3 +111,48 @@ This event occurs whenever a caption's text has been generated.
 | Name  | Description  | 
 |---|---|
 |caption| The next generated caption text.|
+
+### Non-virtual functions 
+These functions can’t be overridden and they can be used only inside the inherited script. If it’s needed to use some of these functions into the Unity scene, for example with buttons, it is needed to create a public function which connects the button with the API.
+
+#### protected void SetUpPlayer()
+Initialize the player video stream system internally. It is necessary to use this function before anything else.
+ 
+#### protected void Release()
+Free all resources internally.
+ 
+#### protected void Play(int playerIndex)
+Play a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### protected void Pause(int playerIndex)
+Pause a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### protected void Stop(int playerIndex)
+Stop a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### protected void Seek(int playerIndex, long milliseconds)
+Seek a certain stream to a certain time of the track in **milliseconds**. The stream is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### protected void SetVolume(int playerIndex, float volume)
+Modify the **volume** of a certain stream. The volume of the track value ranges between **0.0f** and **1.0f**. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### protected void ChangeVideoContent(int playerIndex, string url)
+Change the video’s **url**  of a certain stream. This will close the current playback and open the **new url**. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### protected long GetVideoPosition(int playerIndex)
+Provides information about the timeline position in milliseconds, of the current video of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### protected long GetVideoDuration(int playerIndex)
+Provides information about the total duration in milliseconds, of the current video of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### public HISPlayerCaptionTrack[] GetCaptionTrackList(int playerIndex)
+Provide information about all the captions of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### public int GetCaptionsCount(int playerIndex)
+Obtain the number of captions of a  certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### public string GetCaptionID(int playerIndex, int ccTrackIndex)
+Obtain the ID of a certain caption track of a certain stream. The **ccTrackIndex** is the caption track index to be selected. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+ 
+#### public string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
+Obtain the language of a certain caption track of a certain stream.  The **ccTrackIndex** is the caption track index to be selected. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
