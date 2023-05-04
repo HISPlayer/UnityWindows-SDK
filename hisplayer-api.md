@@ -80,7 +80,7 @@ This event is triggered by the ABR feature.
     <td>Heigth of the video.</td>
   </tr>
 </table>
- 
+
 #### protected virtual void EventPlaybackPlay(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_PLAY** is triggered.
 This event occurs whenever an internal playback has been started.
@@ -106,7 +106,7 @@ This event occurs whenever an internal playback has been sought to a new time po
     <td>Value of the new track position in milliseconds.</td>
   </tr>
 </table>
- 
+
 #### protected virtual void EventVolumeChange(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_VOLUME_CHANGE** is triggered.
 This event occurs whenever the volume has been modified.
@@ -120,7 +120,7 @@ This event occurs whenever the volume has been modified.
     <td>New value for the volume.</td>
   </tr>
 </table>
- 
+
 #### protected virtual void EventEndOfContent(HISPlayerEventInfo eventInfo)
 Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_END_OF_CONTENT** is triggered.
 This event occurs whenever the player reaches the end of the playback.
