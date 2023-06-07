@@ -10,7 +10,7 @@
 ### Supported Platforms: 
 * Windows Standalone
 * Universal Windows Platform
-  * WSA
+  * WSA / Microsoft Store Apps
   * Xbox
   * HoloLens
 
