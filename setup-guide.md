@@ -83,13 +83,15 @@ Once all this process it’s done, it’s time to associate the RenderTexture to
 ## Configure HISPlayer Properties
 ### <ins>Multi Stream Properties</ins>
 Use **Multi Stream Properties** to set all configurations needed for multi stream.However, currently HISPlayer Windows SDK only supports single stream. Multi stream support will be added in the future. It starts with 0 elements. Adding more elements will be ignored until multi stream support is added. Each element added has its own configuration.
-* **Render Mode**:
-  * Material: Attach the **Material** asset created to the **Material** section of the element.
-  * Raw Image: Attach the **RawImage** asset created to the **RawImage** section of the element.
-  * RenderTexture: Attach the **RenderTexture** asset created before to the **RenderTexture** section of the element.
-  * NONE: If the stream is not going to be rendered on any surface, select this option.
-* **URL**: Add the **URL** associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs.
-* **Auto Play**: Property to determine whether the player will start automatically after set up. The property only works for the beginning of the stream, it is not used to toggle play/pause.
+* <span style="color:blue">**Render Mode**</span>: Select the render surface. It can be RenderTexture, Material, RawImage or NONE.
+* <span style="color:blue">**Material**</span>: Attach the **Material** asset created to the **Material** section of the element.
+* <span style="color:blue">**Raw Image**</span>: Attach the **RawImage** asset created to the **RawImage** section of the element.
+* <span style="color:blue">**Render Texture**</span>: Attach the **RenderTexture** to the **RenderTexture** section of the element.
+* <span style="color:blue">**URL**</span>: Add the URL associated to the stream. Currently only single URL is supported.
+* <span style="color:blue">**Autoplay**</span>: Property to determine whether the player will start automatically after set up.
+<p align="center">
+<img src="./assets/multistream-properties.PNG">
+</p>
 
 ## Build and Run
 Once the configuration it’s done, open **‘Build Settings’** and press **‘Build And Run’**.
