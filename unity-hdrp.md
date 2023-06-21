@@ -12,10 +12,11 @@ It is also possible to create a project directly with HDRP:
 
 ### Creating HDRP/Lit Material
 
-After installing the HDRP, you will be able to create the material with the attached Render Texture following the same steps from [Render Texture](https://hisplayer.github.io/UnityWindows-SDK/#/setup-guide?id=configure-hisplayer-properties). 
+After installing the HDRP, you will be able to create the material with the attached Render Texture following the same steps from  [**Render Texture**](./setup-guide.md#RenderTexture)
+
 This process will create a material with the shader **HDRP/Lit** with the RenderTexture attached to the *Base Map* attribute. 
 
-Finally, attach the created Render Texture to the *Multi Stream Properties* in the Editor (more information in [Configure HISPlayer Properties](https://hisplayer.github.io/UnityWindows-SDK/#/setup-guide?id=multi-stream-properties)) and play the scene.
+Finally, attach the created Render Texture to the *Multi Stream Properties* in the Editor (more information in [**Configure HISPlayer Properties**](./setup-guide.md#Configure-HISPlayer-properties)) and play the scene.
 
 <p align="center">
 <img width="700" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/fbdf3cdd-991f-4884-a720-6af9c93a1e23">
