@@ -21,17 +21,14 @@ Finally, attach the created Render Texture to the *Multi Stream Properties* in t
 <img width="700" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/fbdf3cdd-991f-4884-a720-6af9c93a1e23">
 </p>
 
-<p align="center">
-<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/8d00c6f3-5500-4eaf-8e21-50153dd06ac1">
-
-<img width="400" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/3b61ee4e-bd2b-476f-9202-79275b27550c">
-</p>
+|<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/8d00c6f3-5500-4eaf-8e21-50153dd06ac1">|<img width="400" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/3b61ee4e-bd2b-476f-9202-79275b27550c">|
+|-|-|
 
 ## Trying other shaders
-The created RenderTexture will work with all the shaders provided by HDRP, but not all of them are useful for playing a stream or a normal video (it depends on the objective of the project), because they have different attributes and combinations.
+The created RenderTexture will work with all the shaders provided by HDRP, but not all of them are useful for playing a stream or a normal video (it depends on the objective of the project), because they have different attributes and combinations. For using the render texture in other shaders, please make sure that the RenderTexture is attached in the correct places. Otherwise it may not work as expected. Also some shaders could have effect to other shaders.
 
 ### Example 1
-For using the render texture in other shaders, please make sure that the RenderTexture is attached in the correct places. Otherwise it may not work as expected. Also some shaders could have effect to other shaders. For example, if you try with **HDRP/Fabric/CottonWool** , it's possible to attach the RenderTexture to the *NormalMap* attribute and disable the *Use Thread Map*.
+If you try with **HDRP/Fabric/CottonWool** , it's possible to attach the RenderTexture to the *NormalMap* attribute and disable the *Use Thread Map*.
 Nevertheless, this is going to affect the **HDRP/Lit**. If you put **HDRP/Lit** again, after using **HDRP/Fabric/CottonWool**, you will see the effects by playing the scene.
 
 <p align="center">
