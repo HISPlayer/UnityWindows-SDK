@@ -6,7 +6,7 @@ It is also possible to create a project directly with HDRP:
 
 <img width="762" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/8b4f284c-fde0-4533-9f9b-bd2c69a0de8d">
 
-After installing the HDRP, you will be able to create the material with the attached Render Texture following the same steps from [Render Texture](https://hisplayer.github.io/UnityWindows-SDK/#/setup-guide?id=rendertexture)
+After installing the HDRP, you will be able to create the material with the attached Render Texture following the same steps from [Render Texture](https://hisplayer.github.io/UnityWindows-SDK/#/setup-guide?id=configure-hisplayer-properties)
 
 <img width="762" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/fbdf3cdd-991f-4884-a720-6af9c93a1e23">
 
@@ -14,7 +14,7 @@ This process will create a material with the shader **HDRP/Lit** with the Render
 
 <img width="762" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/8d00c6f3-5500-4eaf-8e21-50153dd06ac1">
 
-Attach the created Render Texture to the *Multi Stream Properties* in the Editor (more information in [Configure HISPlayer properties](https://hisplayer.github.io/UnityAndroid-SDK/#/setup-guide?id=configure-hisplayer-properties)) and play the scene.
+Attach the created Render Texture to the *Multi Stream Properties* in the Editor (more information in [Configure HISPlayer properties](https://hisplayer.github.io/UnityWindows-SDK/#/setup-guide?id=multi-stream-properties)) and play the scene.
 
 ## Trying other shaders
 
