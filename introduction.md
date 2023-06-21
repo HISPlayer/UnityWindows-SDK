@@ -29,3 +29,7 @@
 
 ### Supported Graphics API:
 * Direct3D 11
+
+### Supported Unity Render Pipeline
+* URP (Universal Render Pipeline)
+* HDRP (High Definition Render Pipeline)
