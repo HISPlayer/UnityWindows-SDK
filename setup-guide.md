@@ -81,6 +81,10 @@ For creating this object, select **GameObject > 3D Object > Quad**. Then select 
 Once all this process it’s done, it’s time to associate the RenderTexture to the script component.
 
 ## Configure HISPlayer Properties
+
+### <ins>License Key</ins>
+Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
+
 ### <ins>Multi Stream Properties</ins>
 Use **Multi Stream Properties** to set all configurations needed for multi stream.However, currently HISPlayer Windows SDK only supports single stream. Multi stream support will be added in the future. It starts with 0 elements. Adding more elements will be ignored until multi stream support is added. Each element added has its own configuration.
 * <span style="color:blue">**Render Mode**</span>: Select the render surface. It can be RenderTexture, Material, RawImage or NONE.
