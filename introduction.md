@@ -15,8 +15,8 @@
   * HoloLens
 
 ### Supported Stream Protocols: 
-* HLS
-* DASH
+* HLS (Live & VOD)
+* DASH (VOD)
 
 ### Supported Subtitles Protocols: 
 * CEA-608
