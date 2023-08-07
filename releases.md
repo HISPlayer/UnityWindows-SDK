@@ -1,4 +1,11 @@
 # HISPlayer Unity Windows SDK Release Notes
+
+### Version 1.4.0
+##### August 7, 2023
+- [**Added**] Playback Speed Controller.
+    - void SetPlaybackSpeedRate(int playerIndex, float speed);
+    - float GetPlaybackSpeedRate(int playerIndex);   
+
 ### Version 1.3.0
 ##### June 23, 2023
 - [**Added**] License key field.
