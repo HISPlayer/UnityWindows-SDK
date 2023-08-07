@@ -187,3 +187,9 @@ Obtain the ID of a certain caption track of a certain stream. The **ccTrackIndex
  
 #### public string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
 Obtain the language of a certain caption track of a certain stream.  The **ccTrackIndex** is the caption track index to be selected. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+
+#### public void SetPlaybackSpeedRate(int playerIndex, float speed)
+Modify the **speed rate** of a certain stream giving a playerIndex. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
+
+#### public float GetPlaybackSpeedRate(int playerIndex)
+Obtain the **speed rate** of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**. Currently multi stream is not supported and only **playerIndex 0** will be processed.
