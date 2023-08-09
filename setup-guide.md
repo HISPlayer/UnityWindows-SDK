@@ -1,7 +1,25 @@
-# Setup Guide
-Through this guide, you will be introduced to the basic steps for setting up the playback.
+# QuickStart Guide
+Getting started with HISPlayer consists of implementing the following steps:
 
-## Import Package
+1. Import and configure package   
+
+      1.1. Import package
+ 
+      1.2. Configure Unity for Windows
+   
+2. Create your own sample
+   
+    2.1 Setup HISPlayer Manager
+   
+    2.2 Attach Unity Resources
+   
+    2.3 Configure HISPlayer Properties
+
+    2.4 Build and Run
+
+It's also possible to import the [HISPlayer Sample](/import-sample.md) after completing step 1. The sample is a comprehensive example scene using the HISPlayerSDK to help demonstrate features like play, pause, seek, etc.
+
+## 1.1 Import Package
 Importing the package is the same as importing other normal packages in Unity. Select the package of HISPlayer SDK and import it.
 
 **Assets > Import Package > Custom Package > HISPlayerWindowsSDK unity package**
@@ -10,7 +28,7 @@ Importing the package is the same as importing other normal packages in Unity. S
 <img src="./assets/import-package.png">
 </p>
 
-## Configure Unity for Windows
+## 1.2 Configure Unity for Windows
 Switch the platform for **Windows**. Open **File > Build Settings** and then select **Windows, Mac, Linux platform** for Windows Standalone build or select **Universal Windows Platform** for UWP build and **switch platform**.
 
 Open **Player Settings > Other Settings**. Disable the **Auto Graphics API for Windows** option and make sure that only **‘Direct3D11’** macro is defined.
@@ -18,7 +36,7 @@ Open **Player Settings > Other Settings**. Disable the **Auto Graphics API for W
 ### <ins>UWP Settings</ins>
 Open **Universal Windows Platform Settings > Player Settings > Publishing Settings > Capabilities**. Check the **InternetClient** option to enable internet access.
 
-## Setup HISPlayer Manager
+## 2.1 Setup HISPlayer Manager
 Create a script which is going to inherit from **HISPlayerManager**. It is needed to include the namespace by adding **‘using HISPlayerAPI;’** and add this component to a GameObject. It is recommended to create an **Empty GameObject** for this.
 
 Call the **‘SetUpPlayer()’** function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
@@ -41,7 +59,7 @@ public class HISPlayerWindowsSample : HisPlayerManager
 ```
 It is strictly necessary to use **SetUpPlayer** before using anything else, because this function will initialize everything from the SDK in order to be able to use the rest of the functions (Play, Pause, Seek …).
 
-## Attach Unity Resources
+## 2.2 Attach Unity Resources
 Move to **Unity Editor** to attach all the resources. The rendering system is supporting **Material, RawImage, RenderTexture** and **NONE** (empty)  Unity’s components.
 
 ### <ins>Material</ins>
@@ -80,7 +98,7 @@ For creating this object, select **GameObject > 3D Object > Quad**. Then select 
 
 Once all this process it’s done, it’s time to associate the RenderTexture to the script component.
 
-## Configure HISPlayer Properties
+## 2.3 Configure HISPlayer Properties
 
 ### <ins>License Key</ins>
 Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
@@ -104,7 +122,7 @@ Use **Multi Stream Properties** to set all configurations needed for multi strea
 <img src="./assets/multistream-properties.PNG">
 </p>
 
-## Build and Run
+## 2.4 Build and Run
 Once the configuration it’s done, open **‘Build Settings’** and press **‘Build And Run’**.
 <p align="center">
 <img src="./assets/build-run.png" width=45%>
