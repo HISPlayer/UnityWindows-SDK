@@ -3,7 +3,7 @@ Please, download the sample here -> [**HISPlayer Windows Sample**](https://downl
 
 Importing the package is the same as importing other normal packages in Unity. Select the downloaded package and import it.
 
-- **Assets > Import Package > Custom Package > HISPlayerUnityWindowsSample.unitypackage**
+- **Assets > Import Package > Custom Package > HISPlayerWindowsSample.unitypackage**
 
 <p align="center">
 <img src="./assets/import-package.png">
