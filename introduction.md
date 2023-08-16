@@ -18,6 +18,21 @@
 * HLS (Live & VOD)
 * DASH (VOD)
 
+### Supported Audio Codecs:
+ * AAC
+
+### Supported Video Codecs:
+ * H.264
+
+### Supported Audio Formats:
+ * AVI
+ * MP3
+ * WAV
+
+### Supported Video Formats:
+* MP4
+* AVI
+
 ### Supported Subtitles Protocols: 
 * CEA-608
 * WebVTT
