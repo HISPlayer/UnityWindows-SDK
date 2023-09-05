@@ -14,6 +14,9 @@
   * Xbox
   * HoloLens
 
+### Supported Architecture : 
+* Intel 64-bit (x64)
+
 ### Supported Stream Protocols: 
 * HLS (Live & VOD)
 * DASH (VOD)
