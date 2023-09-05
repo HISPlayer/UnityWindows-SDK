@@ -29,7 +29,9 @@ Importing the package is the same as importing other normal packages in Unity. S
 </p>
 
 ## 1.2 Configure Unity for Windows
-Switch the platform for **Windows**. Open **File > Build Settings** and then select **Windows, Mac, Linux platform** for Windows Standalone build or select **Universal Windows Platform** for UWP build and **switch platform**.
+Switch the platform for **Windows**. Open **File > Build Settings** and then select **Windows, Mac, Linux platform** for Windows Standalone build or select **Universal Windows Platform** for UWP build and **switch platform**. 
+
+Set **Architecture** to **Intel 64-bit**.
 
 Open **Player Settings > Other Settings**. Disable the **Auto Graphics API for Windows** option and make sure that only **‘Direct3D11’** macro is defined.
 
