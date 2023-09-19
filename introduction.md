@@ -27,6 +27,9 @@
 
 ### Supported Video Codecs:
  * H.264
+ * H.265 / HEVC
+   * [MS HEVC codec extension](https://apps.microsoft.com/store/detail/hevc-video-extensions/9NMZLZ57R3T7) is required.
+   * Only support fMP4 container. MPEG-2 TS container is not supported.
 
 ### Supported Audio Formats:
  * AVI
@@ -48,6 +51,10 @@
 
 ### Supported Graphics API:
 * Direct3D 11
+
+### Maximum Supported Resolution:
+* 8,192 × 4,320 (8K)
+  * H.265/HEVC codec is required to play 8K video.
 
 ### Supported Unity Render Pipeline
 * URP (Universal Render Pipeline)
