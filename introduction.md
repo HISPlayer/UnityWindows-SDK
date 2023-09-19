@@ -53,8 +53,8 @@
 * Direct3D 11
 
 ### Maximum Supported Resolution:
-* 8,192 × 4,320 (8K)
-  * H.265/HEVC codec is required to play 8K video.
+ * 8,192 × 4,320 (8K)
+   * H.265/HEVC codec is required to play 8K video.
 
 ### Supported Unity Render Pipeline
 * URP (Universal Render Pipeline)
