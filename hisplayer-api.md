@@ -107,6 +107,14 @@ This event occurs whenever an internal playback has been sought to a new time po
   </tr>
 </table>
 
+#### protected virtual void EventPlaybackBuffering(HisPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_BUFFERING** is triggered.
+This event occurs whenever the playback is in buffering state.
+
+#### protected virtual void EventPlaybackBufferEnd(HisPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_BUFFER_END** is triggered.
+This event occurs whenever the player has finished buffering.
+
 #### protected virtual void EventVolumeChange(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when **HisPlayerEvent.HISPLAYER_EVENT_VOLUME_CHANGE** is triggered.
 This event occurs whenever the volume has been modified.
