@@ -6,6 +6,7 @@
   * 2020
   * 2021
   * 2022
+  * 2023
 
 ### Supported Platforms: 
   * Windows Standalone
