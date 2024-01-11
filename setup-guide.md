@@ -29,11 +29,11 @@ Importing the package is the same as importing other normal packages in Unity. S
 </p>
 
 ## 1.2 Configure Unity for Windows
-Switch the platform for **Windows**. Open **File > Build Settings** and then select **Windows, Mac, Linux platform** for Windows Standalone build or select **Universal Windows Platform** for UWP build and **switch platform**. 
+Open the window **Tools > HISPlayer** located in the upper side of the screen > Click on Player Settings Configuration > Select **Build Target to Standalone Windows x64** > Set all the required settings.
 
-Set **Architecture** to **Intel 64-bit**.
-
-Open **Player Settings > Other Settings**. Disable the **Auto Graphics API for Windows** option and make sure that only **‘Direct3D11’** macro is defined.
+<p align="center">
+<img width="319" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/0f8d483e-2e3a-4d97-8210-35b7741373c5">
+</p>
 
 ### <ins>UWP Settings</ins>
 Open **Universal Windows Platform Settings > Player Settings > Publishing Settings > Capabilities**. Check the **InternetClient** option to enable internet access.
