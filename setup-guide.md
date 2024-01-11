@@ -65,40 +65,34 @@ It is strictly necessary to use **SetUpPlayer** before using anything else, beca
 Move to **Unity Editor** to attach all the resources. The rendering system is supporting **Material, RawImage, RenderTexture** and **NONE** (empty)  Unity’s components.
 
 ### <ins>Material</ins>
-Move into Assets’ folder to create a new **Material**. It is possible to create a new Material into **Assets > Create > Material**.
+Create a new Material from **Assets > Create > Material** and attach it to the GameObject that is going to be used as screen and to the stream controller component. 
+
+You can also use the **Resources > Materials > HISPlayerDefaultMaterial.mat** we provide in our package. 
 
 <p align="center">
-<img src="./assets/material.png">
-</p>
-
-Attach the material to the GameObject which is going to be used as a screen.
-
-<p align="center">
-<img src="./assets/attach-material.png">
+<img width=37% alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/eacab2a8-7cee-4218-add9-98672f250540">
+<img width=45% alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/ffe0ea80-d66b-4fac-beb0-01152bce200e">
 </p>
 
 ### <ins>Raw Image</ins>
-This action will be related to Unity’s Canvas. If there is not a Canvas created yet, creating a **Raw Image** will create one automatically. 
-For the creation select, select **GameObject > UI > Raw Image**.
+This action will be related to Unity’s Canvas. If there is not a Canvas created yet, creating a **Raw Image** will create one automatically.
+
+For the creation, select **GameObject > UI > Raw Image**. Once it is created, attach it to the stream controller component
 
 <p align="center">
-<img src="./assets/rawimage.png">
+<img width="400" alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/5dcc7a3f-7de5-4e87-a5e3-3e08587360b4">
 </p>
-
-Once it is created, it can be associated with the stream controller script without doing anything else.
 
 ### <ins>RenderTexture</ins>
-First of all, check if the Resources folder exists and contains the RenderTextures folder. If it doesn’t exist then create it from zero. In this case, look for the Resources folder and copy its contents into the Unity Assets folder. This folder contains Unity RenderTexture resources. Another option is creating RenderTexture in Assets directly.
+For this you can use the RenderTexture we provide or create a RenderTexture from zero. In the first case, go to the Resources folder of our package and attach the **Resources > Materials > HISPlayerDefaultMaterialRenderTexture.mat** to the GameObject that is going to be used as screen and the **Resources > RenderTextures > HISPlayerRenderTexture.renderTexture** to the stream controller component.
 
-The **RenderTexture** has to be attached to the GameObject which will be a screen for rendering the multimedia stream.
+For creating it from zero, select **Assets > Create > Render Texutre** and then create a **Material** referencing the **Render Texture**. This last action can be done automatically by grabbing the **Render Texture** and dropping it at the end of a GameObject's Inspector with the component **Mesh Renderer** with **Material field empty**. This will create the new material inside a **Materials** folder. 
 
-For creating this object, select **GameObject > 3D Object > Quad**. Then select the GameObject and remove the material attached to its **Mesh Renderer** component, then replace it with the **RenderTexture** created. The **RenderTextures** folder provided by the SDK contains the **Material** folder and this material is the one which is needed to be used for the replacement . If the **RenderTexture** resource has been created from 0, then another option is to grab the **RenderTexture** from the **Assets** folder and drop it at the end of the GameObject’s Inspector, this will create a new material automatically.
+Once all this process it’s done, associate the **RenderTexture** to the script component.
 
 <p align="center">
-<img src="./assets/rendertexture.png">
+<img src="https://github.com/HISPlayer/UnityiOS-SDK/assets/47497948/a0f26bc1-c7b1-432e-ad87-1a2d203d32c8">
 </p>
-
-Once all this process it’s done, it’s time to associate the RenderTexture to the script component.
 
 ## 2.3 Configure HISPlayer Properties
 
@@ -113,15 +107,25 @@ License key is not required for HoloLens SDK.
 
 
 ### <ins>Multi Stream Properties</ins>
-Use **Multi Stream Properties** to set all configurations needed for multi stream.However, currently HISPlayer Windows SDK only supports single stream. Multi stream support will be added in the future. It starts with 0 elements. Adding more elements will be ignored until multi stream support is added. Each element added has its own configuration.
+
+Use **Multi Stream Properties** to set all configurations needed for multi stream. However, currently HISPlayer Windows SDK only supports single stream. Multi stream support will be added in the future. It starts with 0 elements. Adding more elements will be ignored until multi stream support is supported. Each element added has its own configuration.
+
+### <ins>Multi Stream Properties</ins>
+Use Multi Stream Properties to set all the configuration needed for multi stream. However, currently HISPlayer Windows SDK only supports single stream. Multi stream support will be added in the future. It starts with 0 elements. Adding more elements will be ignored until multi stream support is supported. 
+
+Each element added has its own configuration for multiple players and corresponds to 1 Render Surface. If you just need a single stream, then you just need to add 1 element with 1 URL.
+
 * <span style="color:blue">**Render Mode**</span>: Select the render surface. It can be RenderTexture, Material, RawImage or NONE.
 * <span style="color:blue">**Material**</span>: Attach the **Material** asset created to the **Material** section of the element.
 * <span style="color:blue">**Raw Image**</span>: Attach the **RawImage** asset created to the **RawImage** section of the element.
 * <span style="color:blue">**Render Texture**</span>: Attach the **RenderTexture** to the **RenderTexture** section of the element.
-* <span style="color:blue">**URL**</span>: Add the URL associated to the stream. Currently only single URL is supported.
+* <span style="color:blue">**URL**</span>: Add the URL associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs.
 * <span style="color:blue">**Autoplay**</span>: Property to determine whether the player will start automatically after set up.
+* <span style="color:blue">**LoopPlayback (Read-only)**</span>: Loop the current playback. It's true by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
+* <span style="color:blue">**AutoTransition (Read-only)**</span>: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
+
 <p align="center">
-<img src="./assets/multistream-properties.PNG">
+<img width="479" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/7d94655c-2d91-4a1b-b90e-36ab1dbfa1da">
 </p>
 
 ## 2.4 Build and Run
