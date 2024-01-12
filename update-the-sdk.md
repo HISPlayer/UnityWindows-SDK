@@ -1,15 +1,15 @@
 # Update the SDK
 
-Through this guide, you will be introduced how to update the SDK if you already have installed the SDK previously.
+Through this guide, you will be introduced how to update the SDK if you already have installed the SDK previously. Please, restart the Editor before continuing.
 
 ## Remove Old Package
 
-Remove the previous HISPlayer Windows SDK package from Unity Package Manager
+Remove the previous HISPlayer Windows SDK package from Unity Package Manager. 
 
-**Window > Package Manager > Packages - HISPlayer > HISPlayer Windows SDK > Remove**
+**Window > Package Manager > Packages - HISPlayer > HISPlayer SDK > Remove**
 
 <p align="center">
-<img width="700" src="./assets/remove-package-windows.PNG">
+  <img width="793" alt="Remove" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/00071022-a78b-4b36-bd1d-eaf64aad49fc">
 </p>
 
 <br>
@@ -19,8 +19,7 @@ Remove the previous HISPlayer Windows SDK package from Unity Package Manager
 Importing the new package is the same as importing other normal packages in Unity. 
 Select the package of HISPlayer SDK and import it.
 
-**Assets > Import Package > Custom Package > HISPlayerWindowsSDK unity package**
-
+**Assets > Import Package > Custom Package > HISPlayerSDK.unitypackage**
 
 <p align="center">
 <img width="450" src="./assets/import-package.png">
@@ -29,9 +28,11 @@ Select the package of HISPlayer SDK and import it.
 <br>
 
 ## Configure Unity for Windows
-Switch the platform for **Windows**. Open **File > Build Settings** and then select **Windows, Mac, Linux platform** for Windows Standalone build or select **Universal Windows Platform** for UWP build and **switch platform**.
+Open the window **Tools > HISPlayer** located in the upper side of the screen > Click on Player Settings Configuration > Select **Build Target to Standalone Windows x64** > Set all the required settings.
 
-Open **Player Settings > Other Settings**. Disable the **Auto Graphics API for Windows** option and make sure that only **‘Direct3D11’** macro is defined.
+<p align="center">
+<img width="319" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/0f8d483e-2e3a-4d97-8210-35b7741373c5">
+</p>
 
 ### <ins>UWP Settings</ins>
 Open **Universal Windows Platform Settings > Player Settings > Publishing Settings > Capabilities**. Check the **InternetClient** option to enable internet access.
@@ -39,8 +40,8 @@ Open **Universal Windows Platform Settings > Player Settings > Publishing Settin
 ## Update License Key
 Input the license key that is associated with the SDK through HISPlayer properties. If the license key is not valid, the player won't work and will throw an error message.
 
-License key is not required for HoloLens SDK.
+License key is not required for Unity Editor or HoloLens SDK.
 
 <p align="center">
-<img width="400" src="./assets/license-key-windows.PNG">
+<img width="478" alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/50b10c75-c6e0-438d-ba1f-da6e66d51eed">
 </p>
