@@ -3,7 +3,7 @@
 ## Public API
 The following public APIs are provided by HISPlayerManager.
 
-* **public string licenseKey**: License key for making the SDK works.
+* **public string licenseKey**: License key for making the SDK works. License key is not required for Unity Editor usage.
 
 * **public class StreamProperties**:
     * **public StreamProperties(bool isLoopPlaybackEnabled = true, bool isAutoTransitionEnabled = false)**: Constructor of the class. The received parameters will set the value of **LoopPlayback** and **AutoTransition** properties respectively. 
