@@ -10,10 +10,8 @@
 
 ### Supported Platforms: 
   * Windows Standalone
-  * Universal Windows Platform
-    * WSA / Microsoft Store Apps
-      
-<h5>If you need HoloLens SDK, please contact HISPlayer team</h5>
+
+<h5>If you need Universal Windows Platform SDK (UWP), please contact HISPlayer team.</h5>
 
 ### Supported Architecture : 
   * Intel 64-bit (x64)
