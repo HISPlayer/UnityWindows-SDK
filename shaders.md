@@ -15,7 +15,7 @@ will see there is a material attach to the **material** attribute named **HISPla
 This material is using the custom shader **HISPlayer/HISPlayerDefaultShaderRawImage**. 
 For more details, you can check the following folders and files:
 
-- **Packages/HISPlayer Windows SDK/HisPlayer/Scripts/Shaders/** - Here you can find the custom shaders. These files contain the code to simulate the Gamma color space when using Linear color space.
+- **Packages/HISPlayerSDK/HisPlayer/Scripts/Shaders/** - Here you can find the custom shaders. These files contain the code to simulate the Gamma color space when using Linear color space.
   - **HISPlayerDefaultShader.shader**
   - **HISPlayerDefaultShaderRawImage.shader**
  
@@ -23,7 +23,7 @@ For more details, you can check the following folders and files:
 <img width = "600" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/fa79f193-7cd2-4709-a79a-6b0af5d987f3">
 </p>
 
-- **Packages/HISPlayer Windows SDK/HisPlayer/Resources/Materials/** - Here you can find 3 different Unity materials:
+- **Packages/HISPlayerSDK/HisPlayer/Resources/Materials/** - Here you can find 3 different Unity materials:
   - **HISPlayerDefaultMaterial.mat**: It uses the **HISPlayerDefaultShader.shader** and can be used for the HISPlayer RenderMode “Material”.
   - **HISPlayerDefaultMaterialRawImage.mat**: It uses the **HISPlayerDefaultShaderRawImage.shader** and can be used attaching the material to the material attribute of the RawImage component.
   - **HISPlayerDefaultMaterialRenderTexture.mat**: It uses the HISPlayerDefaultShader.shader and the HISPlayerDefaultRenderTexture.renderTexture.
@@ -32,5 +32,5 @@ For more details, you can check the following folders and files:
 <img width = "600" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/77ef6736-000c-44c8-89b8-61fce0944007">
 </p>
 
-- **Packages/HISPlayer Windows SDK/HisPlayer/Resources/RenderTextures/**
+- **Packages/HISPlayerSDK/HisPlayer/Resources/RenderTextures/**
   - **HISPlayerDefaultRenderTexture.renderTexture** - This file is a custom RenderTexture to be used with the **HISPlayerDefaultMaterialRenderTexture.mat**.
