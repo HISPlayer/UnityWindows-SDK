@@ -12,6 +12,7 @@
   * Windows Standalone
   * Universal Windows Platform
     * WSA / Microsoft Store Apps
+      
 <h6>If you need HoloLens SDK, please contact HISPlayer team</h6>
 
 ### Supported Architecture : 
