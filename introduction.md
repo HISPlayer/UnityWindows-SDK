@@ -13,7 +13,7 @@
   * Universal Windows Platform
     * WSA / Microsoft Store Apps
       
-<h6>If you need HoloLens SDK, please contact HISPlayer team</h6>
+<h5>If you need HoloLens SDK, please contact HISPlayer team</h5>
 
 ### Supported Architecture : 
   * Intel 64-bit (x64)
