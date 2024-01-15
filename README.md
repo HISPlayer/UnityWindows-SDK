@@ -2,9 +2,7 @@
 
 HISPlayer is the most advanced Unity video streaming player for Windows. It enables premium DASH and HLS video streaming inside your Unity games and metaverses on Windows. We include advanced features such as multistream or automatic bitrate adaptation to secure the best video quality.
 
-# The full Documentation:
-
-https://hisplayer.github.io/UnityWindows-SDK
+# [The full Documentation](https://hisplayer.github.io/UnityWindows-SDK)
 
 ## Try our UnityEngine Video Player SDK Now!
 
