@@ -16,10 +16,6 @@ The following public APIs are provided by HISPlayerManager.
     * **public bool EnableRendering**: Determines if the stream will be rendered or not. The value can change in every moment for toggling between render or non-render mode. If true, the player will be rendered. It only can change in runtime.
     * **public bool LoopPlayback (Read-only)**: Loop the current playback. It's true by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
     * **public bool AutoTransition (Read-only)**: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
-    * **public List \<string\> keyServerURI**: List of the DRM license key for each URL.
-    * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
-    * **public List <AdsProperties> adsProperties**: List of properties to configure advertisement insertions for each player in the scene. This API is not supported for Windows. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
-    * **public int startingBitrate**: The bitrate in bps the player will try to start playing. Setting it to 0 will make the player start with the lowest track. This API is not supported for Windows. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
   
 * **public enum HISPlayerRenderMode**: Type of texture for rendering.
     * **RenderTexture**
@@ -237,7 +233,7 @@ Modify the volume of a certain stream giving a **playerIndex**. The **volume** o
 Add a new stream to the list multiStreamProperties. The stream must be added using this function instead of changing the list manually.
 
 #### protected void AddVideoContent(int playerIndex, string url)
-Add new content to a certain player. If the **enableDRM** variable is true, a video content with an empty license will be added. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths.
+Add new content to a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths.
  
 #### protected void ChangeVideoContent(int playerIndex, int urlIndex)
 Change the video’s url  of a certain player. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of urls.
