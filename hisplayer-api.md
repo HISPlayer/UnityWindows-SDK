@@ -51,7 +51,6 @@ The following public APIs are provided by HISPlayerManager.
    * **HISPLAYER_ERROR_LICENSE_EXPIRED** (no function on this)
    * **HISPLAYER_ERROR_NOT_VALID_APPID** (no function on this)
    * **HISPLAYER_ERROR_GENERAL_LICENSE_ERROR** (no function on this)
-   * **HISPLAYER_ERROR_ANDROID_API_NOT_SUPPORTED** (no function on this)
    * **HISPLAYER_ERROR_LICENSE_DISABLED** (no function on this)
    * **HISPLAYER_ERROR_IMPRESSIONS_LIMIT_REACHED** (no function on this)
    * **HISPLAYER_ERROR_PLAYBACK_DURATION_LIMIT_REACHED** (no function on this)
