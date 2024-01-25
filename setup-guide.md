@@ -35,8 +35,12 @@ Open the window **Tools > HISPlayer** located in the upper side of the screen > 
 <img width="319" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/0f8d483e-2e3a-4d97-8210-35b7741373c5">
 </p>
 
-### <ins>UWP Settings</ins>
-Open **Universal Windows Platform Settings > Player Settings > Publishing Settings > Capabilities**. Check the **InternetClient** option to enable internet access.
+### <ins>Universal Windows Platform (UWP) Settings</ins>
+Open the window **Tools > HISPlayer** located in the upper side of the screen > Click on Player Settings Configuration > Select **Build Target to UWP** > Set all the required settings.
+
+<p align="center">
+<img width="319" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/32887298/7aa4a0f9-fad0-4ac7-bf40-a339f88c8398">
+</p>
 
 ## 2.1 Setup HISPlayer Manager
 Create a script which is going to inherit from **HISPlayerManager**. It is needed to include the namespace by adding **‘using HISPlayerAPI;’** and add this component to a GameObject. It is recommended to create an **Empty GameObject** for this.
