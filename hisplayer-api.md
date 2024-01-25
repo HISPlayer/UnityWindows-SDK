@@ -235,13 +235,13 @@ Add a new stream to the list multiStreamProperties. The stream must be added usi
 Add new content to a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths.
  
 #### protected void ChangeVideoContent(int playerIndex, int urlIndex)
-Change the video’s URL  of a certain player. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of urls.
+Change the video’s URL  of a certain player. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of URLs.
 
 #### protected void ChangeVideoContent(int playerIndex, string url)
 Change the video’s URL of a certain player given a new URL. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written.
 
 #### protected void RemoveVideoContent(int playerIndex, int urlIndex)
-Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.  The **urlIndex** is associated with the index of the element in the list of urls.
+Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.  The **urlIndex** is associated with the index of the element in the list of URLs.
 
 #### protected void RemoveStream(int playerIndex)
 Remove a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
