@@ -6,7 +6,7 @@
     - **ChangeVideoContent(int playerIndex, string url)**
 - [**Improvement**] Optimized error logs
 - [**Added**] UWP support on multiplatform SDK
-  
+
 ### Version 3.2.0
 ##### December 7, 2023
 - [**Added**] AutoTransition and LoopPlayback APIs
