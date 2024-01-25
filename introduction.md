@@ -10,7 +10,7 @@
 
 ### Supported Platforms: 
   * Windows Standalone
-<h5>If you need Universal Windows Platform SDK (UWP), please contact HISPlayer team.</h5>
+  * UWP (Universal Windows Platform)
 
 ### Supported Architecture : 
   * Intel 64-bit (x64)
