@@ -20,6 +20,8 @@
 ##### September 5, 2023
 The Windows SDK is moved to multiplatform HISPlayerSDK (Android, iOS, macOS, WebGL, Windows)
 
+Starting from version 3.0.0, the Windows SDK is part of multiplatform SDK
+
 ### Version 1.4.0
 ##### August 7, 2023
 - [**Added**] Playback Speed Controller.
