@@ -5,7 +5,7 @@
 - [**Added**] New API to change video content using the URL string as a paremeter:
     - **ChangeVideoContent(int playerIndex, string url)**
 - [**Improvement**] Optimized error logs
-- [**Added**] UWP support on multiplatform SDK
+- [**Added**] UWP support to multiplatform SDK
 
 ### Version 3.2.0
 ##### December 7, 2023
