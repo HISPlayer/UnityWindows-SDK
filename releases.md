@@ -2,7 +2,7 @@
 
 ### Version 3.3.0
 ##### January 25, 2024
-- [**Added**] New API to change video content using the URL string as a paremeter:
+- [**Added**] New API to change video content using the URL string as a parameter:
     - **ChangeVideoContent(int playerIndex, string url)**
 - [**Improvement**] Optimized error logs
 - [**Added**] UWP support to multiplatform SDK
