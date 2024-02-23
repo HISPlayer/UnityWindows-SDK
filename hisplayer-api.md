@@ -40,12 +40,6 @@ The following public APIs are provided by HISPlayerManager.
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
     * **HISPLAYER_EVENT_NETWORK_CONNECTED**
     * **HISPLAYER_EVENT_END_OF_CONTENT**
-    * **HISPLAYER_EVENT_AD_BLOCK_STARTED**
-    * **HISPLAYER_EVENT_AD_BLOCK_ENDY**
-    * **HISPLAYER_EVENT_AD_STARTED**
-    * **HISPLAYER_EVENT_AD_STOPPED**
-    * **HISPLAYER_EVENT_AD_PODS_INFO**
-    * **HISPLAYER_EVENT_ID3_METADATA**
 
 * **public enum HISPlayerError**: The list of errors provided by HISPlayer SDK. The errors can be used with the virtual functions in the next section:
    * **HISPLAYER_ERROR_LICENSE_EXPIRED** (no function on this)
