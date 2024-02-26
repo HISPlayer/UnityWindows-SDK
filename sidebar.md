@@ -1,6 +1,7 @@
 - [HISPlayer Unity Windows SDK](/introduction.md)
 - [Quickstart Guide](/setup-guide.md)
 - [Import HISPlayer Sample](/import-sample.md)
+- [Playing Local FIles](/local-files.md)
 - [Unity URP](/unity-urp.md)
 - [Unity HDRP](/unity-hdrp.md)
 - [HISPlayer API](/hisplayer-api.md)
