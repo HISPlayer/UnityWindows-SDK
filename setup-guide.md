@@ -43,6 +43,8 @@ Open the window **Tools > HISPlayer** located in the upper side of the screen > 
 </p>
 
 ## 2.1 Setup HISPlayer Manager
+*You may skip this section if you are using [**HISPlayerSample**](./import-sample.md). The code set-up is already included in the sample script (HISPlayerSample.cs).*
+
 Create a script which is going to inherit from **HISPlayerManager**. It is needed to include the namespace by adding **‘using HISPlayerAPI;’** and add this component to a GameObject. It is recommended to create an **Empty GameObject** for this.
 
 Call the **‘SetUpPlayer()’** function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
