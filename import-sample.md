@@ -30,7 +30,7 @@ Importing the package is the same as importing other normal packages in Unity. S
 - Open **File** > **Build Settings** > **Add Open Scenes**
 
 <p align="center">
-  <img width=70% alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/6c774c5f-2b81-4cd3-8588-b26f8ee92784">
+  <img width=70% alt="windows-settings" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/b5b0e53d-125b-4764-9bb7-ffd6687e80ce">
 </p>
 
 - Build and Run
