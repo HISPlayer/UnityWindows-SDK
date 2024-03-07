@@ -38,7 +38,7 @@ Importing the package is the same as importing other normal packages in Unity. S
 To check how to set up the SDK and API usage, please refer to **Assets/HISPlayerSample/Scripts/HISPlayerController.cs** and **HISPlayerController GameObject** in the Editor.
 
 ## MultiStream UI Demo
-**Please, keep in mind multi stream is not supported for Windows yet so only the left screen will display content.**
+**Please, keep in mind multi stream is not supported for Windows yet. Only the left screen will display content.**
 
 The UI components in the sample scene are fully modifiable and each stream has its own UI. The sample is intended to show a comprehensive scene using the HISPlayer SDK to help demonstrate features such as play, pause, seek, etc using the multi stream feature. 
 
