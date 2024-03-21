@@ -1,5 +1,14 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 3.4.0
+##### March 21, 2024
+- [**Added**] Multi stream support
+- [**Added**] Local Playback Persistent Datapath support 
+- [**Improvement**] Optimized HISPlayer Settings
+    - A warning message will be displayed in case a field required by HISPlayer SDK is missing
+- [**Improvement**] Optimized HISPlayer error event handler
+- [**Added**] HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED error event
+
 ### Version 3.3.0
 ##### January 25, 2024
 - [**Added**] New API to change video content using the URL string as a parameter:
