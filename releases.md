@@ -2,10 +2,12 @@
 
 ### Version 3.3.0
 ##### January 25, 2024
+- [**Added**] UWP support to multiplatform SDK
 - [**Added**] New API to change video content using the URL string as a parameter:
     - **ChangeVideoContent(int playerIndex, string url)**
+- [**Added**] HISPlayerError.HISPLAYER_ERROR_NETWORK_FAILED and ErrorNetworkFailed(HISPlayerErrorInfo errorInfo) event callback
+    - It indicates if there is no Internet when starting the application
 - [**Improvement**] Optimized error logs
-- [**Added**] UWP support to multiplatform SDK
 
 ### Version 3.2.0
 ##### December 7, 2023
