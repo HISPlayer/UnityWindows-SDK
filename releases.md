@@ -1,7 +1,7 @@
 # HISPlayer Unity Windows SDK Release Notes
 
 ### Version 3.4.0
-##### March 21, 2024
+##### April 10, 2024
 - [**Added**] Multi stream support
 - [**Added**] Local Playback Persistent Datapath support 
 - [**Added**] HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED error event
