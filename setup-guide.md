@@ -143,10 +143,6 @@ Input the license key that is associated with the SDK. If the license key is not
 ### <ins>Multi Stream Properties</ins>
 
 Use **Multi Stream Properties** to set all configurations needed for multi stream. It starts with 0 elements. Each element added has its own configuration.
-
-### <ins>Multi Stream Properties</ins>
-Use Multi Stream Properties to set all the configuration needed for multi stream.
-
 Each element added has its own configuration for multiple players and corresponds to 1 Render Surface. If you just need a single stream, then you just need to add 1 element with 1 URL.
 
 * <span style="color:blue">**Render Mode**</span>: Select the render surface. It can be RenderTexture, Material, RawImage or NONE.
