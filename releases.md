@@ -1,5 +1,9 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 3.4.1
+##### April 23, 2024
+- [**Improvement**] Improvement of software robustness
+
 ### Version 3.4.0
 ##### April 10, 2024
 - [**Added**] Multi stream support
@@ -22,6 +26,10 @@
 ##### December 7, 2023
 - [**Added**] AutoTransition and LoopPlayback APIs
 - [**Added**] Unity 2023 support
+
+### Version 3.1.1
+##### November 23, 2023
+- [**Improvement**] Improvement of software robustness
 
 ### Version 3.1.0
 ##### October 11, 2023
