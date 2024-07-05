@@ -19,7 +19,7 @@ HISPlayer is the most advanced Unity video streaming player for Windows. It enab
 
 <br>
 
-## [Try our UnityEngine Video Player SDK Here!](https://github.com/HISPlayer/Unity_Video_Player/releases/tag/v3.4.1)
+## [Try FREE DEMO of our Unity Engine Video Player Here!](https://github.com/HISPlayer/Unity_Video_Player/releases/tag/v3.4.1)
 
 <br>
 
