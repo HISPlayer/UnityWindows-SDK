@@ -197,7 +197,7 @@ This event occurs whenever an internal playback is buffering.
 Override this method to add custom logic when **HISPlayerEvent.HISPlayer_EVENT_END_OF_CONTENT** is triggered.
 This event occurs whenever an internal playback reaches the end of the video content.
  
-#### protected virtual void ErrorInfo(HISPlayerErrorInfo subtitlesInfo)
+#### protected virtual void ErrorInfo(HISPlayerErrorInfo errorInfo)
 Override this method to add custom logic when an error callback is triggered. Please, refer to the **HISPlayerError** list.
 
 #### protected virtual void ErrorNetworkFailed(HISPlayerErrorInfo errorInfo)
