@@ -72,6 +72,14 @@ Open the window **Tools > HISPlayer** located in the upper side of the screen > 
 <img width="319" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/32887298/7aa4a0f9-fad0-4ac7-bf40-a339f88c8398">
 </p>
 
+### HISPlayer SDK versions 4.3.0 and above
+
+ - On the **Project** window, open **Packages > HISPlayer SDK > HISPlayer > Plugins > iOS**, select **HISPlayeriOS.framework** and exclude **WSAPlayer**
+
+<p align="center">
+      <img width="80%" alt="image" src="https://github.com/user-attachments/assets/947dedd1-5025-4622-acf2-86df24821f04">
+</p>
+
 ## 2.1 Setup HISPlayer Manager
 *You may skip this section if you are using [**HISPlayerSample**](./import-sample.md). The code set-up is already included in the sample script (HISPlayerSample.cs).*
 
