@@ -72,6 +72,13 @@ Open the window **Tools > HISPlayer** located in the upper side of the screen > 
 <img width="319" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/32887298/7aa4a0f9-fad0-4ac7-bf40-a339f88c8398">
 </p>
 
+#### Unity 2022.1 and above
+In the case you are using Unity 2022.1 or above, please, enable **Player Settings > Publishing Settings > Sync Capabilities**
+
+<p align="center">
+      <img width="85%" alt="image" src="https://github.com/user-attachments/assets/e4eaf36a-f9a2-46d7-8c75-62da0c6b6682">
+</p>
+
 ## 2.1 Setup HISPlayer Manager
 *You may skip this section if you are using [**HISPlayerSample**](./import-sample.md). The code set-up is already included in the sample script (HISPlayerSample.cs).*
 
