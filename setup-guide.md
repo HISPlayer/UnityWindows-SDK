@@ -79,15 +79,6 @@ In the case you are using Unity 2022.1 or above, please, enable **Player Setting
       <img width="85%" alt="image" src="https://github.com/user-attachments/assets/e4eaf36a-f9a2-46d7-8c75-62da0c6b6682">
 </p>
 
-
-### HISPlayer SDK versions 4.3.0 and above
-
- - On the **Project** window, open **Packages > HISPlayer SDK > HISPlayer > Plugins > iOS**, select **HISPlayeriOS.framework** and exclude **WSAPlayer**
-
-<p align="center">
-      <img width="80%" alt="image" src="https://github.com/user-attachments/assets/947dedd1-5025-4622-acf2-86df24821f04">
-</p>
-
 ## 2.1 Setup HISPlayer Manager
 *You may skip this section if you are using [**HISPlayerSample**](./import-sample.md). The code set-up is already included in the sample script (HISPlayerSample.cs).*
 
