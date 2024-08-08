@@ -1,7 +1,7 @@
 # HISPlayer Unity Windows SDK Release Notes
 
 ### Version 4.3.0
-##### August 7, 2024
+##### August 8, 2024
 - [**Added**] HISPLAYER_EVENT_PLAYBACK_BUFFERING and EventPlaybackBuffering.
     - This event occurs whenever an internal playback is buffering
 - [**Added**] New HISPlayer Video Uploader feature. Turn local videos into streaming videos such as HLS or DASH. This videos are going to be stored in our server for you. Please, on the Editor refer to:
