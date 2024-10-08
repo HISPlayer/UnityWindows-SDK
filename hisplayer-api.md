@@ -244,6 +244,10 @@ Remove content from a certain player. The **playerIndex** is associated with the
 #### protected void RemoveStream(int playerIndex)
 Remove a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
+All streams with a player indexes that are higher than the removed stream's player index will automatically reduce their index by 1, to avoid leaving intermediate player indexes without reference to a stream.
+
+For example: Given an ordered list of initialized streams **[A(0), B(1), C(2), D(3), E(4)]**, when deleting stream **C** (**index 2**) , stream **D** will take **index 2** and stream **E** will take **index 3** instead of **4**, resulting in an ordered list of streams such as **[A(0), B(1), D(2), E(3)]**.
+
 #### protected void SetPlaybackSpeedRate(int playerIndex, float speed)
 Modify the **speed rate** of a certain stream giving a **playerIndex**. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
