@@ -1,5 +1,9 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 4.4.2
+##### October 16, 2024
+- [**Improvement**] Optimized remove stream functionalities
+
 ### Version 4.4.0
 ##### September 10, 2024
 - [**Added**] Release API is called automatically when stopping the Editor, changing scenes or closing the app
