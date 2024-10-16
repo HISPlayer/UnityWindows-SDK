@@ -2,7 +2,7 @@
 
 ### Version 4.4.2
 ##### October 16, 2024
-- [**Improvement**] Optimized remove stream functionalities
+- [**Improvement**] Optimization of the video streams removal process
 
 ### Version 4.4.0
 ##### September 10, 2024
