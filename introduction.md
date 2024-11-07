@@ -7,6 +7,7 @@
   * 2021
   * 2022
   * 2023
+  * Unity 6
 
 ### Supported Platforms: 
   * Windows Standalone
