@@ -1,6 +1,6 @@
 # HISPlayer Unity Windows SDK Release Notes
 
-### Version 4.5.2
+### Version 4.5.0
 ##### December 4, 2024
 - [**Improvement**] Optimized the event callbacks after removing streams.
 
