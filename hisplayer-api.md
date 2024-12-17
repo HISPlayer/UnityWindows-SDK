@@ -30,7 +30,6 @@ The following public APIs are provided by HISPlayerManager.
     * **HISPLAYER_EVENT_PLAYBACK_PAUSE**
     * **HISPLAYER_EVENT_PLAYBACK_STOP**
     * **HISPLAYER_EVENT_PLAYBACK_SEEK**
-    * **HISPLAYER_EVENT_VOLUME_CHANGE**
     * **HISPLAYER_EVENT_END_OF_PLAYLIST**
     * **HISPLATER_EVENT_ON_TRACK_CHANGE**
     * **HISPLAYER_EVENT_ON_STREAM_RELEASE**
@@ -128,21 +127,6 @@ This event occurs whenever an internal playback has been sought to a new time po
   <tr>
     <td>param1</td>
     <td>Value of the new track position in milliseconds.</td>
-  </tr>
-</table>
-
-#### protected virtual void EventVolumeChange(HISPlayerEventInfo eventInfo)
-Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_VOLUME_CHANGE** is triggered.
-This event occurs whenever the volume has been modified.
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>param1</td>
-    <td>New value for the volume.</td>
   </tr>
 </table>
 
