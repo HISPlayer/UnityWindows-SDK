@@ -1,5 +1,9 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 4.6.0
+##### January 16, 2024
+- [**Improvement**] Removed D3D11 warning messages.
+
 ### Version 4.5.0
 ##### December 4, 2024
 - [**Improvement**] Optimized the event callbacks after removing streams.
