@@ -11,10 +11,10 @@ HISPlayer is the most advanced Unity video streaming player for Windows. It enab
 > HISPlayer allows you to upload and host your local video files and convert them into HLS / DASH streaming formats.
 > Open a [**FREE account here**](https://dashboard.hisplayer.com/signup) to start hosting your videos and play them inside your Unity projects.
 >
-> Moreover, there is a version of HISPlayer SDK that allows you to upload your videos directly from the **Unity Editor.**
+> Moreover, there is a version of HISPlayer SDK that allows you to host your videos directly from the **Unity Editor.**
 > 
 > Tutorial:
-> * **[Upload videos from the Unity Editor](https://www.youtube.com/watch?v=vSI7U6TjHqI)**
+> * **[Host videos from the Unity Editor](https://www.youtube.com/watch?v=vSI7U6TjHqI)**
 > 
 > We can help you with the full **end-to-end** delivery and playback.
 
