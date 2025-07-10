@@ -2,7 +2,7 @@
 
 ### Version 4.9.0
 ##### July 10, 2025
-- [**Fixed**] Fixed fps drop when a video restarted with loop option.
+- [**Improvement**] Optimized performance when a video restarts with loop option.
 
 ### Version 4.8.0
 ##### July 7, 2025
