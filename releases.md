@@ -1,5 +1,13 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 4.9.0
+##### July 10, 2025
+- [**Fixed**] Fixed fps drop when a video restarted with loop option.
+
+### Version 4.8.0
+##### July 7, 2025
+- [**Improvement**] Enhancement to InspectorGUI to dynamically show/hide certain options.
+
 ### Version 4.6.0
 ##### January 16, 2025
 - [**Improvement**] Removed D3D11 warning messages.
