@@ -91,9 +91,9 @@ For example, using the Awake function:
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using HisPlayerAPI;
+using HISPlayerAPI;
 
-public class HISPlayerWindowsSample : HisPlayerManager
+public class HISPlayerWindowsSample : HISPlayerManager
 {
     protected override void Awake()
     {
