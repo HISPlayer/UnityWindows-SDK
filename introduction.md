@@ -3,7 +3,6 @@
 ## Compatibility
 
 ### Supported Unity Versions: 
-  * 2020
   * 2021
   * 2022
   * 2023
