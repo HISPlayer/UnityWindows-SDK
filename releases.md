@@ -1,5 +1,9 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 4.12.0
+##### October 29, 2025
+- [**Improvement**] Improved the UI appearance of HISPlayerManager in the inspector.
+
 ### Version 4.10.0
 ##### September 11, 2025
 - [**Improvement**] Editor no longer clears console logs after stopping Play mode.
