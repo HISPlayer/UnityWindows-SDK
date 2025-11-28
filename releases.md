@@ -2,7 +2,7 @@
 
 ### Version 4.13.0
 ##### November 28, 2025
-- [Added] Customizable logging system allowing configuration of logLevel, showPlatform, showColorized, and showTimestamp.
+- [**Added**] Customizable logging system allowing configuration of logLevel, showPlatform, showColorized, and showTimestamp.
 
 ### Version 4.12.0
 ##### October 29, 2025
