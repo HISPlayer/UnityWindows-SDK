@@ -2,6 +2,7 @@
 
 ### Version 4.13.0
 ##### November 28, 2025
+- [**Added**] New playback seek events: HISPLAYER_EVENT_PLAYBACK_SEEK_BEGIN and HISPLAYER_EVENT_PLAYBACK_SEEK_END with their respective overridable functions.
 - [**Added**] Customizable logging system allowing configuration of logLevel, showPlatform, showColorized, and showTimestamp.
 
 ### Version 4.12.0
