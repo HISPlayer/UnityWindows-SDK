@@ -262,3 +262,16 @@ Obtain the language of a certain caption of a certain player. The **playerIndex*
 
 #### void SelectCaptionTrack(int playerIndex, int ccTrackIndex)
 Select a certain caption of a certain stream to be used. Before using this functions is recommended to use GetCaptionTrackList in order to know all the information about the captions. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### void SetLogLevel(LogLevel logLevel)
+Establishes the amount of logs to be shown.
+**logLevel**: The log level to be used: 0->DEBUG, 1->INFO, 2->WARNING, 3->ERROR, 4->NONE
+
+#### void SetLogSystemColorized(bool show)
+Enables or disables colorized logs in the HISPlayer log system. Only available for Unity Editor.
+
+#### void SetLogSystemPlatform(bool show)
+Enables or disables colorized logs in the HISPlayer log system.
+
+#### void SetLogSystemTimestamp(bool show)
+Enables or disables timestamps in the HISPlayer log system.
