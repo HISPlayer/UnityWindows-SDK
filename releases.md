@@ -1,5 +1,12 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 4.14.0
+##### December 18, 2025
+- [**Improvement**] Improved HISPlayer Player Settings Configuration tool to clearly indicate when a Unity Editor restart is required for Graphics API changes to take effect in Unity 6.
+- [**Improvement**] Improved volume change event handling to ensure HISPLAYER_EVENT_VOLUME_CHANGE is triggered consistently and behaves uniformly across all supported platforms.
+- [**Improvement**] Updated GetProgramDateTimeEpoch to return the exact Epoch time of the current frame, ensuring consistent behavior across WebGL, Windows, Android, iOS, and macOS.
+- [**Improvement**] Improved seek event handling to ensure HISPLAYER_EVENT_PLAYBACK_SEEK_END is consistently triggered across all platforms, including WebGL.
+
 ### Version 4.13.0
 ##### November 28, 2025
 - [**Added**] New playback seek events: HISPLAYER_EVENT_PLAYBACK_SEEK_BEGIN and HISPLAYER_EVENT_PLAYBACK_SEEK_END with their respective overridable functions.
