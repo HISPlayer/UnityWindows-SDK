@@ -11,6 +11,7 @@
 ##### November 28, 2025
 - [**Added**] New playback seek events: HISPLAYER_EVENT_PLAYBACK_SEEK_BEGIN and HISPLAYER_EVENT_PLAYBACK_SEEK_END with their respective overridable functions.
 - [**Added**] Customizable logging system allowing configuration of logLevel, showPlatform, showColorized, and showTimestamp.
+- [**Added**] GetProgramDateTimeEpoch and GetProgramDateTimeString APIs to obtain the EXT-X-PROGRAM-DATE-TIME information from HLS streams.
 
 ### Version 4.12.0
 ##### October 29, 2025
