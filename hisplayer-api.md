@@ -308,6 +308,12 @@ Obtain the language of a certain caption of a certain player. The **playerIndex*
 #### void SelectCaptionTrack(int playerIndex, int ccTrackIndex)
 Select a certain caption of a certain stream to be used. Before using this functions is recommended to use GetCaptionTrackList in order to know all the information about the captions. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
+#### long GetProgramDateTimeEpoch(int playerIndex)
+Get the epoch time (in seconds since 1970) of the first EXT-X-PROGRAM-DATE-TIME tag of a certain player in seconds. Only available for HLS manifests that have the tag information. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
+
+#### string GetProgramDateTimeString(int playerIndex)
+Get the EXT-X-PROGRAM-DATE-TIME value seen in the manifest of a certain player. Only available for HLS manifests that have the tag information. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
+
 #### void SetLogLevel(LogLevel logLevel)
 Establishes the amount of logs to be shown.
 **logLevel**: The log level to be used: 0->DEBUG, 1->INFO, 2->WARNING, 3->ERROR, 4->NONE
