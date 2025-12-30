@@ -1,5 +1,9 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 4.14.1
+##### December 23, 2025
+- [**Improvement**] Updated eventType of EventPlaybackSeekEnd to output HISPLAYER_EVENT_PLAYBACK_SEEK_END.
+
 ### Version 4.14.0
 ##### December 18, 2025
 - [**Improvement**] Improved HISPlayer Player Settings Configuration tool indicating Unity Editor restart is required for Graphics API changes to take effect in Unity 6.
