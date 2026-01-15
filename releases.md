@@ -1,5 +1,9 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 4.14.5
+##### January 15, 2026
+- [**Improvement**] Updated param1 of EventVolumeChange to return the correct volume value.
+
 ### Version 4.14.3
 ##### January 8, 2026
 - [**Added**] SDK import and compilation for Unity Linux editor.
