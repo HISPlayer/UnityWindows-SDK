@@ -47,6 +47,9 @@ Open the window **Tools > HISPlayer** located in the upper side of the screen > 
 <img width="319" alt="image" src="https://github.com/HISPlayer/UnityWindows-SDK/assets/47497948/0f8d483e-2e3a-4d97-8210-35b7741373c5">
 </p>
 
+### Unity 6
+After setting the HISPlayer Setting above, please close and reopen your Unity project to ensure that Unity applys the update.
+
 ### <ins>Universal Windows Platform (UWP) Settings</ins>
 Open the window **Tools > HISPlayer** located in the upper side of the screen > Click on Player Settings Configuration > Select **Build Target to UWP** > Set all the required settings.
 
