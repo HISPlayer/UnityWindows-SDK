@@ -51,6 +51,7 @@ For more information and the complete Documentation for all platforms, visit **[
 
 ### Supported Graphics API:
   * Direct3D 11
+  * Direct3D 12
 
 ### Maximum Supported Resolution:
   * 8,192 × 4,320 (8K)
