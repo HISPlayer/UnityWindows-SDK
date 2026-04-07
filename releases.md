@@ -1,5 +1,10 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 4.17.0
+##### April 7, 2026
+- [**Improvement**] Updated stereoscopic shader to improve rendering behavior and added support for Side-by-Side and Top-Bottom layouts.
+- [**Added**] Added support for ON_STREAM_RELEASE and PLAYLIST_CHANGE events.
+
 ### Version 4.15.0
 ##### January 21, 2026
 - [**Added**] Windows editor, build and UWP support Direct3D12 Graphics API and Auto Graphics API in Unity6.
