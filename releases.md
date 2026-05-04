@@ -1,5 +1,11 @@
 # HISPlayer Unity Windows SDK Release Notes
 
+### Version 4.18.0
+##### May 4, 2026
+- [**Improvement**] Display correct frame after seeking.
+- [**Improvement**] Updated some events are not triggered after changing video content.
+- [**Improvement**] Updated EventPlaybackSeek to be triggered correctly after seek finishes.
+
 ### Version 4.17.0
 ##### April 7, 2026
 - [**Improvement**] Updated stereoscopic shader to improve rendering behavior and added support for Side-by-Side and Top-Bottom layouts.
