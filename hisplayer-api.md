@@ -74,6 +74,21 @@ The following public APIs are provided by HISPlayerManager.
    * **public int playerIndex**: The index of the player where the event is triggered.
    * **public string caption**: The next generated caption text.
  
+* **public struct HTTPHeader**: Information for a custom HTTP header:
+    * **public string key**: Key of the HTTP header.
+    * **public string value**: Value of the HTTP header.
+
+* **public class HTTPHeaderList**: Wrapper class for a list of custom HTTP headers.
+    * **public List \<HTTPHeader\> headers**: List of HTTP headers.
+    * **public int Count (Read-only)**: Number of HTTP headers.
+    * **public void Add(string key, string value)**: Adds a new HTTP header given a **key** and a **value**.
+    * **public void Add(HTTPHeader header)**: Adds an existing **HTTPHeader**.
+    * **public bool Remove(string key)**: Removes the first header matching the given **key**. Returns true if a header was removed.
+    * **public bool Remove(HTTPHeader header)**: Removes a specific **HTTPHeader**. Returns true if the header was removed.
+    * **public void Clear()**: Removes all HTTP headers.
+    * **public bool Contains(string key)**: Returns true if a header with the given **key** exists.
+    * **public string Get(string key)**: Returns the value of the header matching the given **key**, or null if it does not exist.
+ 
 ## Functions
 The following functions are provided by **HISPlayerManager**. They are **not public** so it’s necessary to create a custom script which inherits from **HISPlayerManager**.
 
@@ -262,12 +277,18 @@ Add a new stream to the list multiStreamProperties. The stream must be added usi
 
 #### void AddVideoContent(int playerIndex, string url)
 Add new content to a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths.
+
+#### void AddVideoContent(int playerIndex, string url, HTTPHeaderList httpHeaderList, HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION (optional))
+Add new content to a certain player including custom HTTP headers. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths. The **httpHeaderList** contains the custom HTTP headers that will be attached to the requests for this content. The parameter **mimeType** is optional and indicates which MIME type will be used for the new url.
  
 #### void ChangeVideoContent(int playerIndex, int urlIndex)
 Change the video’s URL  of a certain player. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of URLs.
 
 #### void ChangeVideoContent(int playerIndex, string url)
 Change the video’s URL of a certain player given a new URL. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written.
+
+#### void ChangeVideoContent(int playerIndex, string url, HTTPHeaderList httpHeaderList)
+Change the video's URL of a certain player given a new URL including custom HTTP headers. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written. This function supports local file paths. This function will replace the Playlist with the new URL. The **httpHeaderList** contains the custom HTTP headers that will be attached to the requests for this content.
 
 #### void RemoveVideoContent(int playerIndex, int urlIndex)
 Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.  The **urlIndex** is associated with the index of the element in the list of URLs.
