@@ -2,6 +2,7 @@
 - [Quickstart Guide](/setup-guide.md)
 - [HISPlayer API](/hisplayer-api.md)
 - [Custom Shaders for Linear Color Space](/shaders.md)
+- [Custom HTTP Headers](/custom-http-headers.md)
 - [Playing Local FIles](/local-files.md)
 - [Unity URP](/unity-urp.md)
 - [Unity HDRP](/unity-hdrp.md)
